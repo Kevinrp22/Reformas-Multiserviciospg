@@ -1,6 +1,6 @@
-import url from "./URL"
+import URL from "./URL"
 export default async () => {
-  const response = await fetch(`${url}/imagenes`)
+  const response = await fetch(`${URL}/imagenes`)
     .catch(error => console.log(error))
   const imagenes = await response.json()
   if (imagenes.error) {

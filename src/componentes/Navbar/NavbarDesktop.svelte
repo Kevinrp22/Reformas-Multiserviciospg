@@ -73,7 +73,7 @@
   <nav class="navbar k-grid ">
     <div class="logo">
       <a href="/" use:link>
-        <img src="assets/logo-web.png" alt="" />
+        <img src="/assets/logo-web.png" alt="" />
       </a>
     </div>
     <div class="menu">

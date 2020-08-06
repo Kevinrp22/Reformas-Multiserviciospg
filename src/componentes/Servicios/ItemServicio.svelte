@@ -1,6 +1,6 @@
 <script>
   export let servicio;
-  const { id, titulo, imagen } = servicio;
+  const { id, titulo, thumbnail } = servicio;
   import { link } from "svelte-routing";
 </script>
 
@@ -54,9 +54,9 @@
 </style>
 <div class="card" data={titulo}>
   <div class="imagen">
-    <img src={imagen} alt="" />
+    <img src={thumbnail} alt="" />
   </div>
-  <a href={`/servicios/${titulo.replace(/ /g,"-")}`} class="text-card" use:link>
+  <a href={`/servicios/${titulo}`} class="text-card" use:link>
     <p>{titulo}</p>
   </a>
 </div>
