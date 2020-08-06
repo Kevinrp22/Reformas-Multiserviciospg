@@ -6,7 +6,6 @@
 </script>
 
 <style>
-
   /* 
   ====== 
   SECCION BIENVENIDA
@@ -146,9 +145,40 @@
   }
   /* 
   ====== 
-  SECCION BIENVENIDA
+  SECCION PORQUE ELEGIRNOS?
   ======
   */
+  .c-pn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .c-card-pn {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card-pn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgb(85, 85, 85);
+  }
+
+  .card-pn__svg img {
+    width: 50px;
+  }
+
+  .card-pn__titulo {
+    color: rgb(54, 54, 54);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+  }
 </style>
 
 <section class="s-bienvenida">
@@ -216,5 +246,77 @@
     <a href="/galeria" use:link>
       <button class="btn">Ver nuestra galeria completa</button>
     </a>
+  </div>
+</section>
+<section class="s-porque-elegirnos k-margin">
+  <div class="c-pn k-grid k-margin">
+    <h1 class="titulo k-padding">¿Porqué elegirnos?</h1>
+    <div class="c-card-pn">
+      <div class="card-pn">
+        <div class="card-pn__svg">
+          <img src="assets/porque-elegirnos/presupuesto.svg" alt="" />
+        </div>
+        <h2 class="card-pn__titulo">Presupuesto</h2>
+        <p class="card-pn__texto">
+          Presupuestos sin compromiso. Explícanos tu proyecto sin compromiso
+          alguno.
+        </p>
+      </div>
+
+      <div class="card-pn">
+        <div class="card-pn__svg">
+          <img src="assets/porque-elegirnos/calidad.svg" alt="" />
+        </div>
+        <h2 class="card-pn__titulo">Calidad</h2>
+        <p class="card-pn__texto">
+          Buscamos la máxima calidad en todos y cada uno de nuestros servicios.
+        </p>
+      </div>
+
+      <div class="card-pn">
+        <div class="card-pn__svg">
+          <img src="assets/porque-elegirnos/precio-ajustado.svg" alt="" />
+        </div>
+        <h2 class="card-pn__titulo">Precios ajustados</h2>
+        <p class="card-pn__texto">
+          Ofrecemos los mejores precios ofreciendo la mejor calidad en nuestros
+          trabajos.
+        </p>
+      </div>
+
+      <div class="card-pn">
+        <div class="card-pn__svg">
+          <img src="assets/porque-elegirnos/experiencia.svg" alt="" />
+        </div>
+        <h2 class="card-pn__titulo">Experiencia</h2>
+        <p class="card-pn__texto">
+          Ponemos a disposición de nuestros clientes nuestros más de 20 años de
+          experiencia
+        </p>
+      </div>
+
+      <div class="card-pn">
+        <div class="card-pn__svg">
+          <img src="assets/porque-elegirnos/asesoramiento.svg" alt="" />
+        </div>
+        <h2 class="card-pn__titulo">Asesoramiento</h2>
+        <p class="card-pn__texto">
+          Ofrecemos un asesoramiento personalizado para ayudarle en sus reformas
+          en Mallorca
+        </p>
+      </div>
+
+      <div class="card-pn">
+        <div class="card-pn__svg">
+          <img src="assets/porque-elegirnos/satisfaccion.svg" alt="" />
+        </div>
+        <h2 class="card-pn__titulo">satisfacción</h2>
+        <p class="card-pn__texto">
+          Nuestro objetivo es conseguir la máxima satisfacción de nuestros
+          clientes.
+        </p>
+      </div>
+
+    </div>
   </div>
 </section>

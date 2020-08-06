@@ -19,7 +19,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 20;
   }
   .sidebar {
     box-sizing: border-box;
@@ -30,7 +30,7 @@
     width: 70%;
     max-width: 350px;
     height: 100%;
-    z-index: 4;
+    z-index: 20;
   }
   .nav-sidebar {
     display: flex;

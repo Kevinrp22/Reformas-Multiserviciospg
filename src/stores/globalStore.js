@@ -5,6 +5,7 @@ import servicios from "../localServicios"
 const globalStore = writable({
   sidebar: false,
   modal_galeria: false,
+  data_filter:""
 });
 
 const store = {

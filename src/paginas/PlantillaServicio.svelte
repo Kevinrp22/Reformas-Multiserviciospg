@@ -2,14 +2,16 @@
   import SectionURL from "../componentes/SectionURL.svelte";
   import servicios from "../stores/servicios";
   export let titulo;
-  $: servicio = $servicios.find((item) => item.titulo === titulo);
+  $: servicio = $servicios.find((item) => {
+    return item.titulo.replace(/ /g,"-") === titulo;
+  });
 </script>
 
 <style>
   .plantilla-servicio {
     background-color: rgb(235, 235, 235);
   }
-  .c-contenido{
+  .c-contenido {
     padding: 40px 30px;
   }
 </style>

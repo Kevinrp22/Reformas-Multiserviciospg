@@ -16,7 +16,6 @@ async function setImagenes() {
   if (imagenes) {
     imagenes = flattenProducts(imagenes)
     galeria.set(imagenes)
-    console.log(imagenes)
   }
 }
 
@@ -34,6 +33,18 @@ function flattenProducts(data) {
       full_imagenes
     };
   });
+}
+export const updateFilterImage = (Gallery, data_filter) => {
+  console.log(data_filter)
+  console.log(Gallery)
+  Gallery.map(storeValue => {
+    console.log(storeValue)
+    return {
+      ...storeValue,
+      data_filter
+    }
+  })
+
 }
 
 export function iterarItem(id) {

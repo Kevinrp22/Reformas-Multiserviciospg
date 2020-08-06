@@ -12,6 +12,7 @@
   import Navbar from "./componentes/Navbar/Navbar.svelte";
   import TopHeader from "./componentes/Navbar/TopHeader.svelte";
   import Sidebar from "./componentes/Navbar/Sidebar.svelte";
+  import Footer from "./componentes/Footer.svelte";
   export let url = "";
 </script>
 
@@ -28,5 +29,5 @@
   <Route path="/servicios/:titulo" component={PlantillaServicios} />
   <Route path="/about" component={About} />
   <Route path="/" component={Inicio} />
-
 </Router>
+<Footer />
